@@ -8,7 +8,7 @@ const cors=require('cors');
 app.use(express.json());
 //cors
 app.use(cors({
-       origin:'http://localhost:5173',
+       origin:'https://infoeasy-info.vercel.app',
        credentials:true
     }))
 //to get port number
