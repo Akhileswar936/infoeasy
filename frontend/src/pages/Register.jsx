@@ -12,7 +12,7 @@ const Register = () => {
   const submithandler = (e) => {
     e.preventDefault();
     axios
-      .post('http://localhost:8314/register', { name, email, password })
+      .post('https://infoeasy-backend.onrender.com/register', { name, email, password })
       .then((res) => setMsg(res.data.msg))
       .catch(() => setMsg('Server error'));
   };
