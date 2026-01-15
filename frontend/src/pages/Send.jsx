@@ -30,7 +30,7 @@ const Send = () => {
 
     axios
       .post(
-        'http://localhost:8314/send',
+        'https://infoeasy-backend.onrender.com/send',
         { info, token: newtoken },
         { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
       )
@@ -51,7 +51,7 @@ const Send = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:8314/user', {
+      .get('https://infoeasy-backend.onrender.com/user', {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
       })
       .then((res) => setName(res.data.msg));
