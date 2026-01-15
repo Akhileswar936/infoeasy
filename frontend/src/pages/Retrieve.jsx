@@ -17,7 +17,7 @@ const Retrieve = () => {
     }
 
     axios
-      .get(`http://localhost:8314/retrieve/${token}`, {
+      .get(`https://infoeasy-backend.onrender.com/retrieve/${token}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },
