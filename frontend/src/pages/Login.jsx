@@ -11,7 +11,7 @@ const Login = () => {
   const submithandler = (e) => {
     e.preventDefault();
     axios
-      .post('http://localhost:8314/login', { email, password })
+      .post('https://infoeasy-backend.onrender.com/login', { email, password })
       .then((res) => {
         if (res.data.token) {
           localStorage.setItem('token', res.data.token);
